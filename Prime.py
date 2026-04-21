@@ -1,3 +1,17 @@
+## Disclaimer
+#verCar Prime is an independent fan project and is not affiliated 
+#with, endorsed by, or connected to Anki, Inc. or Digital Dream Labs.
+#All trademarks remain property of their respective owners.
+#This tool is provided as-is for educational and research purposes only.
+#Use at your own risk.
+
+## Setup
+#1. Flash `Firmware\Prime_Appside_fixed\Prime_Appside_fixed.ino` to ESP32 #1
+#2. Flash `Firmware\Prime_Carside_fixed\Prime_Carside_fixed.ino` to ESP32 #2
+#3. Install Python dependencies: `pip install customtkinter pyserial`
+#4. Run `python Prime.py`
+
+
 import customtkinter as ctk
 import serial
 import serial.tools.list_ports
