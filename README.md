@@ -16,8 +16,8 @@ built with two ESP32 modules and a Python HUD.
 - PC with Python 3.x
 
 ## Setup
-1. Flash `firmware/Prime_Carside.ino` to ESP32 #1
-2. Flash `firmware/Prime_Appside.ino` to ESP32 #2
+1. Flash `Firmware\Prime_Appside_fixed\Prime_Appside_fixed.ino` to ESP32 #1
+2. Flash `Firmware\Prime_Carside_fixed\Prime_Carside_fixed.ino` to ESP32 #2
 3. Install Python dependencies: `pip install customtkinter pyserial`
 4. Run `python Prime.py`
 
