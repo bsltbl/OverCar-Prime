@@ -182,7 +182,7 @@ STRINGS = {
         "card_speed_des":"Desired Speed", "card_speed_act":"Actual Speed",
         "card_battery":"Battery", "card_offset":"Lane Offset",
         "card_track":"Track Piece / Loc", "card_status":"Vehicle Status",
-        "card_lane_id":"Lane Change ID", "card_wait":"Waiting...",
+        "card_lane_id":"Lane Change ID", "card_wait":"Waiting...", "card_na":"N/A",
         "card_driving":"DRIVING", "card_seam":"SEAM", "card_deloc":"⚠ DELOCALIZED",
         "card_collision":"💥 COLLISION", "card_recovery":"🔄 RECOVERY",
         "model_label":"Model", "btn_apply_model":"APPLY MODEL",
@@ -191,6 +191,59 @@ STRINGS = {
         "car_connecting":"Vehicle: Connecting...", "car_disconnected":"Vehicle: Disconnected",
         "vehicle_prefix":"Active Vehicle", "auto_vehicle_set":"Auto-set vehicle to",
         "lang_btn":"🇩🇪 Deutsch",
+        # Sidebar
+        "sidebar_subtitle":"BLE Debug Dashboard",
+        # Speed graph tab
+        "sg_window_label":"Window:",
+        "sg_1min":"1 min", "sg_2min":"2 min", "sg_5min":"5 min", "sg_full":"Full",
+        "sg_des_lbl":"Desired (mm/s)", "sg_act_lbl":"Actual (mm/s)",
+        # Battery tab
+        "batt_charge_indicator":"Charge Indicator (3.3 V – 4.2 V)",
+        "batt_voltage_graph":"Voltage over time (charge events = gold markers)",
+        "batt_voltage_card":"Voltage", "batt_status_card":"Status",
+        "batt_session_card":"Session Time",
+        "batt_charging":"Charging 🔌", "batt_discharging":"Discharging", "batt_idle":"Idle",
+        "batt_unknown":"Unknown", "batt_volt_lbl":"Voltage (mV)",
+        # Lap tab
+        "lap_piece_label":"Start/Finish Piece ID:", "placeholder_auto":"auto",
+        "lap_btn_set":"Set", "lap_btn_reset":"Reset Laps",
+        "lap_current_label":"Current:", "lap_autodetect":"Start/Finish: [auto-detect]",
+        "lap_autodetected":"Start/Finish: Piece {} (auto)",
+        "lap_piece_set":"Start/Finish: Piece {}",
+        "lap_best_times":"🏆 Best Times",
+        "lap_saved_hint":"💾 Saved to times_*.csv",
+        "lap_reset_timer":"⏱ --.-s",
+        "lap_table_title":"Last 15 Laps", "lap_prefix":"Lap ",
+        "lap_col_num":"#", "lap_col_time":"Time", "lap_col_gap":"Gap", "lap_col_start":"Start",
+        # Velocity tab
+        "vel_speed_title":"Speed Over Time",
+        "vel_offset_title":"Lane Offset (Left ← 0 → Right)",
+        "vel_act_lbl":"Actual Speed (mm/s)", "vel_off_lbl":"Offset (mm)", "vel_tgt_lbl":"Target Offset (mm)",
+        # Vehicle tab
+        "veh_speed_label":"Speed mm/s:", "veh_accel_label":"Accel mm/s²:",
+        "veh_send_speed":"Send Speed →", "veh_quick_cmds":"Quick Commands",
+        "veh_ping":"Ping →", "veh_battery_req":"Battery? →",
+        "veh_sdk_mode":"SDK Mode →", "veh_version_req":"Version? →",
+        # About tab
+        "about_version":"v2.9  ·  BLE Man-in-the-Middle Debug Tool",
+        "about_desc":"A fan-made Man-in-the-Middle BLE debug tool for Anki Overdrive,\nbuilt with two ESP32 modules and a Python HUD.",
+        "about_feat1":"🔵  Intercepts BLE traffic between the Overdrive app and vehicles",
+        "about_feat2":"📡  Decodes and displays packets in real time (Sniffer)",
+        "about_feat3":"⚙️   Allows vehicle ID and firmware changing for research purposes",
+        "about_feat4":"📊  Live speed, battery and offset graphs",
+        "about_feat5":"🏁  Lap timer with auto-detection of start/finish line",
+        "about_thanks":"Thanks to MasterAirscrach — his Protocol.cs is the best 🙏",
+        "about_disclaimer_title":"⚠  Disclaimer",
+        "about_disclaimer":"OverCar Prime is an independent fan project and is not affiliated with,\nendorsed by, or connected to Anki, Inc. or Digital Dream Labs.\nAll trademarks remain property of their respective owners.\nThis tool is provided as-is for educational and research purposes only.\nUse at your own risk.",
+        "about_tech_title":"Tech Stack",
+        "about_tech1":"Python 3  ·  customtkinter  ·  pyserial",
+        "about_tech2":"ESP32 (×2)  ·  Arduino BLE libraries",
+        "about_tech3":"Protocol: MasterAirscrach / OverdriveServer",
+        # Status / Details
+        "status_recovered":"✅ Recovered",
+        "status_track":" (Track)", "status_low_batt":"Low Batt! 🔴", "status_charged":"Charged ✅",
+        # Sniffer
+        "sniff_time":"[Time]", "sniff_dir":"Dir", "sniff_msg":"Message", "sniff_info":"Info", "sniff_bytes":"Bytes"
     },
     "de": {
         "title":"OverCar Prime — Test Dashboard",
@@ -206,7 +259,7 @@ STRINGS = {
         "card_speed_des":"Soll-Geschwindigkeit", "card_speed_act":"Ist-Geschwindigkeit",
         "card_battery":"Batterie", "card_offset":"Spur-Versatz",
         "card_track":"Streckensegment / Loc", "card_status":"Fahrzeug Status",
-        "card_lane_id":"Spurwechsel-ID", "card_wait":"Warte...",
+        "card_lane_id":"Spurwechsel-ID", "card_wait":"Warte...", "card_na":"n/a",
         "card_driving":"FÄHRT", "card_seam":"NAHT", "card_deloc":"⚠ DELOKALISIERT",
         "card_collision":"💥 KOLLISION", "card_recovery":"🔄 RECOVERY",
         "model_label":"Modell", "btn_apply_model":"MODELL ÜBERNEHMEN",
@@ -215,6 +268,59 @@ STRINGS = {
         "car_connecting":"Fahrzeug: Verbinde...", "car_disconnected":"Fahrzeug: Getrennt",
         "vehicle_prefix":"Aktives Fahrzeug", "auto_vehicle_set":"Fahrzeug auto-gesetzt:",
         "lang_btn":"🇬🇧 English",
+        # Sidebar
+        "sidebar_subtitle":"BLE Debug Dashboard",
+        # Speed graph tab
+        "sg_window_label":"Zeitfenster:",
+        "sg_1min":"1 Min", "sg_2min":"2 Min", "sg_5min":"5 Min", "sg_full":"Alles",
+        "sg_des_lbl":"Soll (mm/s)", "sg_act_lbl":"Ist (mm/s)",
+        # Battery tab
+        "batt_charge_indicator":"Ladestand-Anzeige (3,3 V – 4,2 V)",
+        "batt_voltage_graph":"Spannung über Zeit (Ladevorgänge = goldene Markierung)",
+        "batt_voltage_card":"Spannung", "batt_status_card":"Status",
+        "batt_session_card":"Sitzungszeit",
+        "batt_charging":"Lädt 🔌", "batt_discharging":"Entlädt", "batt_idle":"Bereit",
+        "batt_unknown":"Unbekannt", "batt_volt_lbl":"Spannung (mV)",
+        # Lap tab
+        "lap_piece_label":"Start/Ziel-Stück-ID:", "placeholder_auto":"auto",
+        "lap_btn_set":"Setzen", "lap_btn_reset":"Runden zurücksetzen",
+        "lap_current_label":"Aktuell:", "lap_autodetect":"Start/Ziel: [automatisch]",
+        "lap_autodetected":"Start/Ziel: Stück {} (auto)",
+        "lap_piece_set":"Start/Ziel: Stück {}",
+        "lap_best_times":"🏆 Bestzeiten",
+        "lap_saved_hint":"💾 Gespeichert als times_*.csv",
+        "lap_reset_timer":"⏱ --,-s",
+        "lap_table_title":"Letzte 15 Runden", "lap_prefix":"Runde ",
+        "lap_col_num":"#", "lap_col_time":"Zeit", "lap_col_gap":"Abstand", "lap_col_start":"Start",
+        # Velocity tab
+        "vel_speed_title":"Geschwindigkeit über Zeit",
+        "vel_offset_title":"Spur-Versatz (Links ← 0 → Rechts)",
+        "vel_act_lbl":"Ist-Geschw. (mm/s)", "vel_off_lbl":"Versatz (mm)", "vel_tgt_lbl":"Soll-Versatz (mm)",
+        # Vehicle tab
+        "veh_speed_label":"Geschw. mm/s:", "veh_accel_label":"Beschl. mm/s²:",
+        "veh_send_speed":"Geschw. senden →", "veh_quick_cmds":"Schnellbefehle",
+        "veh_ping":"Ping →", "veh_battery_req":"Batterie? →",
+        "veh_sdk_mode":"SDK-Modus →", "veh_version_req":"Version? →",
+        # About tab
+        "about_version":"v2.9  ·  BLE Man-in-the-Middle Debug-Tool",
+        "about_desc":"Ein inoffizielles Man-in-the-Middle BLE Debug-Tool für Anki Overdrive,\ngebaut mit zwei ESP32-Modulen und einem Python-HUD.",
+        "about_feat1":"🔵  Fängt BLE-Traffic zwischen der Overdrive-App und Fahrzeugen ab",
+        "about_feat2":"📡  Dekodiert und zeigt Pakete in Echtzeit an (Sniffer)",
+        "about_feat3":"⚙️   Erlaubt Fahrzeug-ID- und Firmware-Änderungen zu Forschungszwecken",
+        "about_feat4":"📊  Live-Graphen für Geschwindigkeit, Batterie und Versatz",
+        "about_feat5":"🏁  Rundentimer mit automatischer Start/Ziel-Erkennung",
+        "about_thanks":"Danke an MasterAirscrach — seine Protocol.cs ist die beste 🙏",
+        "about_disclaimer_title":"⚠  Haftungsausschluss",
+        "about_disclaimer":"OverCar Prime ist ein unabhängiges Fan-Projekt und steht in keiner Verbindung\nzu Anki, Inc. oder Digital Dream Labs.\nAlle Markenzeichen bleiben Eigentum ihrer jeweiligen Inhaber.\nDieses Tool wird ohne Gewähr für Bildungs- und Forschungszwecke bereitgestellt.\nBenutzung auf eigene Gefahr.",
+        "about_tech_title":"Technologie",
+        "about_tech1":"Python 3  ·  customtkinter  ·  pyserial",
+        "about_tech2":"ESP32 (×2)  ·  Arduino BLE-Bibliotheken",
+        "about_tech3":"Protokoll: MasterAirscrach / OverdriveServer",
+        # Status / Details
+        "status_recovered":"✅ Wiederhergestellt",
+        "status_track":" (Strecke)", "status_low_batt":"Akku schwach! 🔴", "status_charged":"Voll geladen ✅",
+        # Sniffer
+        "sniff_time":"[Zeit]", "sniff_dir":"Richt.", "sniff_msg":"Nachricht", "sniff_info":"Info", "sniff_bytes":"Bytes"
     },
 }
 
@@ -239,6 +345,10 @@ class LineGraph(tk.Canvas):
 
     def add_series(self, name, color="#00BFFF", label=""):
         self.series[name] = {"data": [], "color": color, "label": label or name}
+
+    def update_label(self, series_name, new_label):
+        if series_name in self.series:
+            self.series[series_name]["label"] = new_label
 
     def push(self, series_name, value, t=None):
         if series_name not in self.series:
@@ -351,7 +461,7 @@ class LineGraph(tk.Canvas):
             pts = [(tx(t_), ty(v)) for t_, v in s["data"] if t_start <= t_ <= t_end]
             if len(pts) >= 2:
                 flat = [c for p in pts for c in p]
-                self.create_line(*flat, fill=s["color"], width=2, smooth=True)
+                self.create_line(*flat, fill=s["color"], width=2, smooth=False)
             if pts:
                 lx, ly = pts[-1]
                 self.create_oval(lx-3, ly-3, lx+3, ly+3, fill=s["color"], outline="")
@@ -373,7 +483,7 @@ class LineGraph(tk.Canvas):
 class OverCarHUD(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.lang = "de"
+        self.lang = "en"
         self.geometry("1400x950")
         ctk.set_appearance_mode("dark")
 
@@ -411,6 +521,10 @@ class OverCarHUD(ctk.CTk):
             now.strftime("times_%Y-%m-%d_%H-%M.csv")
         )
 
+        self.tab_keys = ["tab_dash","tab_speed_graph","tab_battery","tab_laps",
+                         "tab_velocity","tab_vehicle","tab_sniffer","tab_expert","tab_about"]
+        self.current_tab_names = {}
+
         self.setup_ui()
         threading.Thread(target=self.background_discovery, daemon=True).start()
         self._start_clock()
@@ -421,12 +535,13 @@ class OverCarHUD(ctk.CTk):
     def t(self, k): return STRINGS[self.lang].get(k, k)
 
     def toggle_language(self):
-        self.lang = "en" if self.lang == "de" else "de"
+        self.lang = "de" if self.lang == "en" else "en"
         self.apply_translations()
 
     def apply_translations(self):
         self.title(self.t("title"))
         self.btn_lang.configure(text=self.t("lang_btn"))
+        self.lbl_sidebar_sub.configure(text=self.t("sidebar_subtitle"))
         self.btn_scan_cars.configure(text=self.t("btn_scan"))
         self.btn_connect_car.configure(text=self.t("btn_connect_car"))
         self.btn_clear_sniffer.configure(text=self.t("btn_clear"))
@@ -434,6 +549,7 @@ class OverCarHUD(ctk.CTk):
         self.sw_firmware.configure(text=self.t("sw_firmware"))
         self.btn_apply_model.configure(text=self.t("btn_apply_model"))
         self.lbl_model_title.configure(text=self.t("model_label"))
+        # Dashboard cards
         self.card_speed_des_lbl.configure(text=self.t("card_speed_des"))
         self.card_speed_act_lbl.configure(text=self.t("card_speed_act"))
         self.card_battery_lbl.configure(text=self.t("card_battery"))
@@ -441,8 +557,109 @@ class OverCarHUD(ctk.CTk):
         self.card_track_lbl.configure(text=self.t("card_track"))
         self.card_status_lbl.configure(text=self.t("card_status"))
         self.card_lane_id_lbl.configure(text=self.t("card_lane_id"))
+        # ESP labels (only if not yet connected)
         if self.ser_app is None: self.lbl_esp_app.configure(text=self.t("esp_app_search"))
         if self.ser_car is None: self.lbl_esp_car.configure(text=self.t("esp_car_search"))
+        # Speed graph tab
+        self.lbl_sg_window.configure(text=self.t("sg_window_label"))
+        for rb, key in self._sg_radio_btns:
+            rb.configure(text=self.t(key))
+        # Battery tab
+        self.lbl_charge_indicator.configure(text=self.t("batt_charge_indicator"))
+        self.lbl_voltage_graph.configure(text=self.t("batt_voltage_graph"))
+        # Lap tab
+        self.lbl_lap_table_title.configure(text=self.t("lap_table_title"))
+        self.lbl_lap_piece.configure(text=self.t("lap_piece_label"))
+        self.lap_piece_entry.configure(placeholder_text=self.t("placeholder_auto"))
+        self.btn_lap_set.configure(text=self.t("lap_btn_set"))
+        self.btn_lap_reset.configure(text=self.t("lap_btn_reset"))
+        self.lbl_lap_current_label.configure(text=self.t("lap_current_label"))
+        self.lbl_best_times.configure(text=self.t("lap_best_times"))
+        self.lbl_lap_saved_hint.configure(text=self.t("lap_saved_hint"))
+        # Update start piece label if still showing autodetect
+        cur_sp = self.lbl_start_piece.cget("text")
+        for l in ("en", "de"):
+            if cur_sp == STRINGS[l]["lap_autodetect"]:
+                self.lbl_start_piece.configure(text=self.t("lap_autodetect"))
+                break
+        # Velocity tab
+        self.lbl_vel_speed_title.configure(text=self.t("vel_speed_title"))
+        self.lbl_vel_offset_title.configure(text=self.t("vel_offset_title"))
+        # Vehicle tab quick commands
+        self.lbl_veh_quick_cmds.configure(text=self.t("veh_quick_cmds"))
+        self.lbl_veh_speed.configure(text=self.t("veh_speed_label"))
+        self.lbl_veh_accel.configure(text=self.t("veh_accel_label"))
+        self.btn_send_speed.configure(text=self.t("veh_send_speed"))
+        self.btn_ping.configure(text=self.t("veh_ping"))
+        self.btn_batt_req.configure(text=self.t("veh_battery_req"))
+        self.btn_sdk.configure(text=self.t("veh_sdk_mode"))
+        self.btn_ver_req.configure(text=self.t("veh_version_req"))
+
+        # Graphen Legenden aktualisieren
+        self.speed_graph.update_label("desired", self.t("sg_des_lbl"))
+        self.speed_graph.update_label("actual", self.t("sg_act_lbl"))
+        self.batt_graph.update_label("voltage", self.t("batt_volt_lbl"))
+        self.vel_speed_graph.update_label("actual", self.t("vel_act_lbl"))
+        self.vel_offset_graph.update_label("offset", self.t("vel_off_lbl"))
+        self.vel_offset_graph.update_label("target_offset", self.t("vel_tgt_lbl"))
+
+        # Tab-Header updaten (CTk > v5.2 unterstützt tabview.rename)
+        for tk_key in self.tab_keys:
+            old_name = self.current_tab_names[tk_key]
+            new_name = self.t(tk_key)
+            if old_name != new_name:
+                try:
+                    self.tabview.rename(old_name, new_name)
+                    self.current_tab_names[tk_key] = new_name
+                except Exception:
+                    pass
+
+        # Dynamic card values that may still show static defaults
+        cur_wait = self.card_status.cget("text")
+        for l in ("en", "de"):
+            if cur_wait == STRINGS[l]["card_wait"]:
+                self.card_status.configure(text=self.t("card_wait"))
+                break
+            if cur_wait == STRINGS[l]["card_driving"]:
+                self.card_status.configure(text=self.t("card_driving"))
+                break
+            if cur_wait == STRINGS[l]["card_seam"]:
+                self.card_status.configure(text=self.t("card_seam"))
+                break
+            if cur_wait == STRINGS[l]["card_deloc"]:
+                self.card_status.configure(text=self.t("card_deloc"))
+                break
+            if cur_wait == STRINGS[l]["card_collision"]:
+                self.card_status.configure(text=self.t("card_collision"))
+                break
+            if cur_wait == STRINGS[l]["card_recovery"]:
+                self.card_status.configure(text=self.t("card_recovery"))
+                break
+            if cur_wait == STRINGS[l]["status_recovered"]:
+                self.card_status.configure(text=self.t("status_recovered"))
+                break
+            if cur_wait == STRINGS[l]["batt_unknown"]:
+                self.batt_status_card.configure(text=self.t("batt_unknown"))
+                break
+            if self.card_track.cget("text") == STRINGS[l]["card_na"]:
+                self.card_track.configure(text=self.t("card_na"))
+
+        # App/car connection labels
+        for old_key, new_key in [("lbl_car_disc","lbl_car_disc"),
+                                   ("car_connected","car_connected"),
+                                   ("car_disconnected","car_disconnected")]:
+            for l in ("en","de"):
+                if self.lbl_conn_car.cget("text") == STRINGS[l][old_key]:
+                    self.lbl_conn_car.configure(text=self.t(new_key))
+                    break
+        for old_key in ("app_offline","app_online"):
+            for l in ("en","de"):
+                if self.lbl_app_status.cget("text") == STRINGS[l][old_key]:
+                    self.lbl_app_status.configure(text=self.t(old_key))
+                    break
+
+        # Bestzeiten "Lap X" Labels neu zeichnen
+        self._refresh_best_times()
 
     # ------------------------------------------------------------------
     # Logging
@@ -480,8 +697,9 @@ class OverCarHUD(ctk.CTk):
 
         ctk.CTkLabel(self.sidebar, text="OVERCAR PRIME",
                      font=ctk.CTkFont(size=20, weight="bold")).pack(pady=(18,3))
-        ctk.CTkLabel(self.sidebar, text="BLE Debug Dashboard",
-                     font=ctk.CTkFont(size=11), text_color="#888").pack(pady=(0,6))
+        self.lbl_sidebar_sub = ctk.CTkLabel(self.sidebar, text=self.t("sidebar_subtitle"),
+                     font=ctk.CTkFont(size=11), text_color="#888")
+        self.lbl_sidebar_sub.pack(pady=(0,6))
 
         self.lbl_clock = ctk.CTkLabel(self.sidebar, text="--:--:--",
                                        font=ctk.CTkFont(family="Courier", size=18, weight="bold"),
@@ -546,9 +764,10 @@ class OverCarHUD(ctk.CTk):
         self.tabview = ctk.CTkTabview(self.main_frame)
         self.tabview.pack(fill="both", expand=True, padx=8, pady=8)
 
-        for tk_key in ("tab_dash","tab_speed_graph","tab_battery","tab_laps",
-                        "tab_velocity","tab_vehicle","tab_sniffer","tab_expert","tab_about"):
-            self.tabview.add(self.t(tk_key))
+        for tk_key in self.tab_keys:
+            name = self.t(tk_key)
+            self.tabview.add(name)
+            self.current_tab_names[tk_key] = name
 
         self._build_dashboard_tab()
         self._build_speed_graph_tab()
@@ -562,7 +781,7 @@ class OverCarHUD(ctk.CTk):
 
     # ------------------------------------------------------------------ DASHBOARD
     def _build_dashboard_tab(self):
-        tab = self.tabview.tab(self.t("tab_dash"))
+        tab = self.tabview.tab(self.current_tab_names["tab_dash"])
         tab.grid_columnconfigure((0,1,2), weight=1)
         tab.grid_rowconfigure((0,1,2), weight=1)
 
@@ -575,7 +794,7 @@ class OverCarHUD(ctk.CTk):
         self.card_offset,    self.card_offset_lbl    = self._dash_card(
             tab, self.t("card_offset"),    "0.0 mm",  1, 0, "#FF6EC7")
         self.card_track,     self.card_track_lbl     = self._dash_card(
-            tab, self.t("card_track"),     "N/A",     1, 1, "#FFA500")
+            tab, self.t("card_track"),     self.t("card_na"),     1, 1, "#FFA500")
         self.card_lane_id,   self.card_lane_id_lbl   = self._dash_card(
             tab, self.t("card_lane_id"),   "0",       1, 2, "#BB88FF")
         self.card_status,    self.card_status_lbl    = self._dash_card(
@@ -592,18 +811,22 @@ class OverCarHUD(ctk.CTk):
 
     # ------------------------------------------------------------------ SPEED GRAPH
     def _build_speed_graph_tab(self):
-        tab = self.tabview.tab(self.t("tab_speed_graph"))
+        tab = self.tabview.tab(self.current_tab_names["tab_speed_graph"])
         tab.grid_columnconfigure(0, weight=1)
         tab.grid_rowconfigure(1, weight=1)
 
         ctrl = ctk.CTkFrame(tab, fg_color="transparent")
         ctrl.grid(row=0, column=0, sticky="ew", padx=10, pady=8)
 
-        ctk.CTkLabel(ctrl, text="Window:", font=ctk.CTkFont(size=12)).pack(side="left", padx=(0,6))
+        self.lbl_sg_window = ctk.CTkLabel(ctrl, text=self.t("sg_window_label"), font=ctk.CTkFont(size=12))
+        self.lbl_sg_window.pack(side="left", padx=(0,6))
         self._speed_window = ctk.IntVar(value=60)
-        for label, sec in [("1 min",60),("2 min",120),("5 min",300),("Full",99999)]:
-            ctk.CTkRadioButton(ctrl, text=label, variable=self._speed_window, value=sec,
-                               command=self._on_speed_window_change).pack(side="left", padx=8)
+        self._sg_radio_btns = []
+        for label_key, sec in [("sg_1min",60),("sg_2min",120),("sg_5min",300),("sg_full",99999)]:
+            rb = ctk.CTkRadioButton(ctrl, text=self.t(label_key), variable=self._speed_window, value=sec,
+                               command=self._on_speed_window_change)
+            rb.pack(side="left", padx=8)
+            self._sg_radio_btns.append((rb, label_key))
 
         # Graph
         graph_frame = ctk.CTkFrame(tab, corner_radius=8)
@@ -613,8 +836,8 @@ class OverCarHUD(ctk.CTk):
 
         self.speed_graph = LineGraph(graph_frame, bg="#0d0d1a")
         self.speed_graph.grid(row=0, column=0, sticky="nsew", padx=4, pady=4)
-        self.speed_graph.add_series("desired", color="#00BFFF", label="Desired (mm/s)")
-        self.speed_graph.add_series("actual",  color="#00FF99", label="Actual (mm/s)")
+        self.speed_graph.add_series("desired", color="#00BFFF", label=self.t("sg_des_lbl"))
+        self.speed_graph.add_series("actual",  color="#00FF99", label=self.t("sg_act_lbl"))
         self.speed_graph.y_min = 0
 
     def _on_speed_window_change(self):
@@ -623,22 +846,23 @@ class OverCarHUD(ctk.CTk):
 
     # ------------------------------------------------------------------ BATTERY TAB
     def _build_battery_tab(self):
-        tab = self.tabview.tab(self.t("tab_battery"))
+        tab = self.tabview.tab(self.current_tab_names["tab_battery"])
         tab.grid_columnconfigure((0,1,2), weight=1)
         tab.grid_rowconfigure(2, weight=1)
 
         # Status cards row
-        self.batt_volt_card,     bl1 = self._dash_card(tab, "Voltage",      "--",      0, 0, "#FFD700")
-        self.batt_status_card,   bl2 = self._dash_card(tab, "Status",       "Unknown", 0, 1, "#AAAAAA")
-        self.batt_session_card,  bl3 = self._dash_card(tab, "Session Time", "--",      0, 2, "#88BBFF")
+        self.batt_volt_card,     bl1 = self._dash_card(tab, self.t("batt_voltage_card"), "--",      0, 0, "#FFD700")
+        self.batt_status_card,   bl2 = self._dash_card(tab, self.t("batt_status_card"),  self.t("batt_unknown"), 0, 1, "#AAAAAA")
+        self.batt_session_card,  bl3 = self._dash_card(tab, self.t("batt_session_card"), "--",      0, 2, "#88BBFF")
 
         # Charge bar
         bar_f = ctk.CTkFrame(tab, corner_radius=8)
         bar_f.grid(row=1, column=0, columnspan=3, padx=10, pady=(0,8), sticky="ew")
-        ctk.CTkLabel(bar_f, text="Charge Indicator (3.3 V – 4.2 V)",
-                     font=ctk.CTkFont(size=11), text_color="#888").pack(pady=(8,2))
+        self.lbl_charge_indicator = ctk.CTkLabel(bar_f, text=self.t("batt_charge_indicator"),
+                     font=ctk.CTkFont(size=11), text_color="#888")
+        self.lbl_charge_indicator.pack(pady=(8,2))
         self.batt_progress = ctk.CTkProgressBar(bar_f, width=500, height=20,
-                                                  progress_color="#00FF99")
+                                                progress_color="#00FF99")
         self.batt_progress.set(0)
         self.batt_progress.pack(pady=(0,8), padx=20, fill="x")
         self.batt_pct_label = ctk.CTkLabel(bar_f, text="-- %", font=ctk.CTkFont(size=18, weight="bold"),
@@ -650,11 +874,12 @@ class OverCarHUD(ctk.CTk):
         graph_f.grid(row=2, column=0, columnspan=3, padx=10, pady=(0,10), sticky="nsew")
         graph_f.grid_columnconfigure(0, weight=1)
         graph_f.grid_rowconfigure(1, weight=1)
-        ctk.CTkLabel(graph_f, text="Voltage over time (charge events = gold markers)",
-                     font=ctk.CTkFont(size=11), text_color="#888").grid(row=0, column=0, pady=(6,2))
+        self.lbl_voltage_graph = ctk.CTkLabel(graph_f, text=self.t("batt_voltage_graph"),
+                     font=ctk.CTkFont(size=11), text_color="#888")
+        self.lbl_voltage_graph.grid(row=0, column=0, pady=(6,2))
         self.batt_graph = LineGraph(graph_f, bg="#0d0d1a", height=180)
         self.batt_graph.grid(row=1, column=0, sticky="nsew", padx=4, pady=(0,4))
-        self.batt_graph.add_series("voltage", color="#FFD700", label="Voltage (mV)")
+        self.batt_graph.add_series("voltage", color="#FFD700", label=self.t("batt_volt_lbl"))
         self.batt_graph.y_min = 3200
         self.batt_graph.y_max = 4300
         self.batt_graph.set_window(600)  # 10 min default for battery
@@ -664,7 +889,7 @@ class OverCarHUD(ctk.CTk):
 
     # ------------------------------------------------------------------ LAP TIMER
     def _build_lap_tab(self):
-        tab = self.tabview.tab(self.t("tab_laps"))
+        tab = self.tabview.tab(self.current_tab_names["tab_laps"])
         tab.grid_columnconfigure(0, weight=3)
         tab.grid_columnconfigure(1, weight=2)
         tab.grid_rowconfigure(1, weight=1)
@@ -673,19 +898,23 @@ class OverCarHUD(ctk.CTk):
         ctrl = ctk.CTkFrame(tab, fg_color="transparent")
         ctrl.grid(row=0, column=0, columnspan=2, sticky="ew", padx=10, pady=8)
 
-        ctk.CTkLabel(ctrl, text="Start/Finish Piece ID:", font=ctk.CTkFont(size=12)).pack(side="left", padx=(0,6))
-        self.lap_piece_entry = ctk.CTkEntry(ctrl, width=70, placeholder_text="auto")
+        self.lbl_lap_piece = ctk.CTkLabel(ctrl, text=self.t("lap_piece_label"), font=ctk.CTkFont(size=12))
+        self.lbl_lap_piece.pack(side="left", padx=(0,6))
+        self.lap_piece_entry = ctk.CTkEntry(ctrl, width=70, placeholder_text=self.t("placeholder_auto"))
         self.lap_piece_entry.pack(side="left", padx=4)
-        ctk.CTkButton(ctrl, text="Set", width=60, command=self._lap_set_piece).pack(side="left", padx=4)
-        ctk.CTkButton(ctrl, text="Reset Laps", width=100, fg_color="#8B0000",
-                       command=self._lap_reset).pack(side="left", padx=12)
-        self.lbl_lap_current = ctk.CTkLabel(ctrl, text="⏱ --.-s",
+        self.btn_lap_set = ctk.CTkButton(ctrl, text=self.t("lap_btn_set"), width=60, command=self._lap_set_piece)
+        self.btn_lap_set.pack(side="left", padx=4)
+        self.btn_lap_reset = ctk.CTkButton(ctrl, text=self.t("lap_btn_reset"), width=140, fg_color="#8B0000",
+                       command=self._lap_reset)
+        self.btn_lap_reset.pack(side="left", padx=12)
+        self.lbl_lap_current = ctk.CTkLabel(ctrl, text=self.t("lap_reset_timer"),
                                               font=ctk.CTkFont(family="Courier", size=22, weight="bold"),
                                               text_color="#00FF99")
         self.lbl_lap_current.pack(side="right", padx=12)
-        ctk.CTkLabel(ctrl, text="Current:", font=ctk.CTkFont(size=12), text_color="#888").pack(side="right")
+        self.lbl_lap_current_label = ctk.CTkLabel(ctrl, text=self.t("lap_current_label"), font=ctk.CTkFont(size=12), text_color="#888")
+        self.lbl_lap_current_label.pack(side="right")
 
-        self.lbl_start_piece = ctk.CTkLabel(ctrl, text="Start/Finish: [auto-detect]",
+        self.lbl_start_piece = ctk.CTkLabel(ctrl, text=self.t("lap_autodetect"),
                                              font=ctk.CTkFont(size=11), text_color="#888")
         self.lbl_start_piece.pack(side="left", padx=16)
 
@@ -693,14 +922,15 @@ class OverCarHUD(ctk.CTk):
         left = ctk.CTkFrame(tab, corner_radius=8)
         left.grid(row=1, column=0, padx=(10,4), pady=(0,10), sticky="nsew")
         left.grid_rowconfigure(1, weight=1)
-        ctk.CTkLabel(left, text="Last 15 Laps", font=ctk.CTkFont(size=14, weight="bold")).grid(
-            row=0, column=0, columnspan=4, pady=(10,6))
+        self.lbl_lap_table_title = ctk.CTkLabel(left, text=self.t("lap_table_title"),
+                     font=ctk.CTkFont(size=14, weight="bold"))
+        self.lbl_lap_table_title.grid(row=0, column=0, columnspan=4, pady=(10,6))
         # Header
         hf = ctk.CTkFrame(left, fg_color="#1a1a2e", corner_radius=4)
         hf.grid(row=1, column=0, sticky="ew", padx=8)
         left.grid_columnconfigure(0, weight=1)
-        for i, (txt, w) in enumerate([("#", 40), ("Time", 100), ("Gap", 90), ("Start", 140)]):
-            ctk.CTkLabel(hf, text=txt, width=w, font=ctk.CTkFont(size=11, weight="bold"),
+        for i, (key, w) in enumerate([("lap_col_num",40),("lap_col_time",100),("lap_col_gap",90),("lap_col_start",140)]):
+            ctk.CTkLabel(hf, text=self.t(key), width=w, font=ctk.CTkFont(size=11, weight="bold"),
                           text_color="#888").grid(row=0, column=i, padx=4, pady=2)
         self.lap_rows_frame = ctk.CTkScrollableFrame(left, corner_radius=4, height=400)
         self.lap_rows_frame.grid(row=2, column=0, sticky="nsew", padx=8, pady=(0,8))
@@ -710,7 +940,9 @@ class OverCarHUD(ctk.CTk):
         # Right: best times
         right = ctk.CTkFrame(tab, corner_radius=8)
         right.grid(row=1, column=1, padx=(4,10), pady=(0,10), sticky="nsew")
-        ctk.CTkLabel(right, text="🏆 Best Times", font=ctk.CTkFont(size=14, weight="bold")).pack(pady=(12,6))
+        self.lbl_best_times = ctk.CTkLabel(right, text=self.t("lap_best_times"),
+                     font=ctk.CTkFont(size=14, weight="bold"))
+        self.lbl_best_times.pack(pady=(12,6))
 
         self.best_frames = []
         medals = ["🥇", "🥈", "🥉"]
@@ -726,8 +958,9 @@ class OverCarHUD(ctk.CTk):
             lap_lbl.pack(side="left", padx=4)
             self.best_frames.append((val_lbl, lap_lbl))
 
-        ctk.CTkLabel(right, text="💾 Saved to times_*.csv",
-                     font=ctk.CTkFont(size=10), text_color="#555").pack(pady=(20,4))
+        self.lbl_lap_saved_hint = ctk.CTkLabel(right, text=self.t("lap_saved_hint"),
+                     font=ctk.CTkFont(size=10), text_color="#555")
+        self.lbl_lap_saved_hint.pack(pady=(20,4))
         self.lbl_lap_file = ctk.CTkLabel(right, text=os.path.basename(self._lap_file),
                                           font=ctk.CTkFont(size=10), text_color="#444", wraplength=200)
         self.lbl_lap_file.pack(pady=(0,8))
@@ -746,7 +979,7 @@ class OverCarHUD(ctk.CTk):
         val = self.lap_piece_entry.get().strip()
         if val.isdigit():
             self._start_piece = int(val)
-            self.lbl_start_piece.configure(text=f"Start/Finish: Piece {self._start_piece}")
+            self.lbl_start_piece.configure(text=self.t("lap_piece_set").format(self._start_piece))
             self.log(f"Lap: Start/finish piece set to {self._start_piece}")
 
     def _lap_reset(self):
@@ -755,7 +988,7 @@ class OverCarHUD(ctk.CTk):
         self._lap_start_t = None
         self._refresh_lap_table()
         self._refresh_best_times()
-        try: self.lbl_lap_current.configure(text="⏱ --.-s")
+        try: self.lbl_lap_current.configure(text=self.t("lap_reset_timer"))
         except: pass
 
     def _on_lap_trigger(self, piece_id):
@@ -764,7 +997,7 @@ class OverCarHUD(ctk.CTk):
         if self._start_piece is None:
             # Auto-set on first crossing
             self._start_piece = piece_id
-            self.lbl_start_piece.configure(text=f"Start/Finish: Piece {piece_id} (auto)")
+            self.lbl_start_piece.configure(text=self.t("lap_autodetected").format(piece_id))
             self._lap_start_t = now
             self.log(f"Lap: Auto-detected start piece {piece_id}")
             return
@@ -830,20 +1063,20 @@ class OverCarHUD(ctk.CTk):
             if i < len(sorted_laps):
                 num, dur, _ = sorted_laps[i]
                 vl.configure(text=f"{dur:.3f}s")
-                ll.configure(text=f"Lap {num}")
+                ll.configure(text=f"{self.t('lap_prefix')}{num}")
             else:
                 vl.configure(text="--")
                 ll.configure(text="")
 
     # ------------------------------------------------------------------ VELOCITY/OFFSET
     def _build_velocity_tab(self):
-        tab = self.tabview.tab(self.t("tab_velocity"))
+        tab = self.tabview.tab(self.current_tab_names["tab_velocity"])
         tab.grid_columnconfigure(0, weight=1)
         tab.grid_rowconfigure((1,3), weight=1)
 
-        ctk.CTkLabel(tab, text="Speed Over Time",
-                     font=ctk.CTkFont(size=13, weight="bold"), text_color="#888").grid(
-            row=0, column=0, sticky="w", padx=14, pady=(10,2))
+        self.lbl_vel_speed_title = ctk.CTkLabel(tab, text=self.t("vel_speed_title"),
+                     font=ctk.CTkFont(size=13, weight="bold"), text_color="#888")
+        self.lbl_vel_speed_title.grid(row=0, column=0, sticky="w", padx=14, pady=(10,2))
 
         vspeed_f = ctk.CTkFrame(tab, corner_radius=8)
         vspeed_f.grid(row=1, column=0, sticky="nsew", padx=10, pady=(0,6))
@@ -851,13 +1084,13 @@ class OverCarHUD(ctk.CTk):
         vspeed_f.grid_rowconfigure(0, weight=1)
         self.vel_speed_graph = LineGraph(vspeed_f, bg="#0d0d1a", height=200)
         self.vel_speed_graph.grid(row=0, column=0, sticky="nsew", padx=4, pady=4)
-        self.vel_speed_graph.add_series("actual", color="#00FF99", label="Actual Speed (mm/s)")
+        self.vel_speed_graph.add_series("actual", color="#00FF99", label=self.t("vel_act_lbl"))
         self.vel_speed_graph.set_window(60)
         self.vel_speed_graph.y_min = 0
 
-        ctk.CTkLabel(tab, text="Lane Offset (Left ← 0 → Right)",
-                     font=ctk.CTkFont(size=13, weight="bold"), text_color="#888").grid(
-            row=2, column=0, sticky="w", padx=14, pady=(6,2))
+        self.lbl_vel_offset_title = ctk.CTkLabel(tab, text=self.t("vel_offset_title"),
+                     font=ctk.CTkFont(size=13, weight="bold"), text_color="#888")
+        self.lbl_vel_offset_title.grid(row=2, column=0, sticky="w", padx=14, pady=(6,2))
 
         voffset_f = ctk.CTkFrame(tab, corner_radius=8)
         voffset_f.grid(row=3, column=0, sticky="nsew", padx=10, pady=(0,10))
@@ -865,15 +1098,15 @@ class OverCarHUD(ctk.CTk):
         voffset_f.grid_rowconfigure(0, weight=1)
         self.vel_offset_graph = LineGraph(voffset_f, bg="#0d0d1a", height=200)
         self.vel_offset_graph.grid(row=0, column=0, sticky="nsew", padx=4, pady=4)
-        self.vel_offset_graph.add_series("offset", color="#FF6EC7", label="Offset (mm)")
-        self.vel_offset_graph.add_series("target_offset", color="#BB88FF", label="Target Offset (mm)")
+        self.vel_offset_graph.add_series("offset", color="#FF6EC7", label=self.t("vel_off_lbl"))
+        self.vel_offset_graph.add_series("target_offset", color="#BB88FF", label=self.t("vel_tgt_lbl"))
         self.vel_offset_graph.set_window(60)
         self.vel_offset_graph.y_min = -100
         self.vel_offset_graph.y_max = 100
 
     # ------------------------------------------------------------------ VEHICLE TAB
     def _build_vehicle_tab(self):
-        tab = self.tabview.tab(self.t("tab_vehicle"))
+        tab = self.tabview.tab(self.current_tab_names["tab_vehicle"])
         self.lbl_model_title = ctk.CTkLabel(tab, text=self.t("model_label"), font=ctk.CTkFont(weight="bold"))
         self.lbl_model_title.pack(pady=10)
         self.model_dropdown = ctk.CTkComboBox(
@@ -890,27 +1123,34 @@ class OverCarHUD(ctk.CTk):
         self.fw_dropdown.set("5A.2E (Overdrive)")
 
         ctk.CTkLabel(tab, text="─"*50, text_color="gray").pack(pady=10)
-        ctk.CTkLabel(tab, text="Quick Commands", font=ctk.CTkFont(weight="bold")).pack()
+        self.lbl_veh_quick_cmds = ctk.CTkLabel(tab, text=self.t("veh_quick_cmds"), font=ctk.CTkFont(weight="bold"))
+        self.lbl_veh_quick_cmds.pack()
 
         sf = ctk.CTkFrame(tab, fg_color="transparent")
         sf.pack(pady=8)
-        ctk.CTkLabel(sf, text="Speed mm/s:").grid(row=0, column=0, padx=5)
+        self.lbl_veh_speed = ctk.CTkLabel(sf, text=self.t("veh_speed_label"))
+        self.lbl_veh_speed.grid(row=0, column=0, padx=5)
         self.entry_speed = ctk.CTkEntry(sf, width=100, placeholder_text="500")
         self.entry_speed.grid(row=0, column=1, padx=5)
-        ctk.CTkLabel(sf, text="Accel mm/s²:").grid(row=0, column=2, padx=5)
+        self.lbl_veh_accel = ctk.CTkLabel(sf, text=self.t("veh_accel_label"))
+        self.lbl_veh_accel.grid(row=0, column=2, padx=5)
         self.entry_accel = ctk.CTkEntry(sf, width=100, placeholder_text="500")
         self.entry_accel.grid(row=0, column=3, padx=5)
-        ctk.CTkButton(sf, text="Send Speed →", command=self.send_speed_cmd, width=120).grid(row=0, column=4, padx=10)
+        self.btn_send_speed = ctk.CTkButton(sf, text=self.t("veh_send_speed"), command=self.send_speed_cmd, width=140)
+        self.btn_send_speed.grid(row=0, column=4, padx=10)
 
         pf = ctk.CTkFrame(tab, fg_color="transparent")
         pf.pack(pady=5)
-        for i, (txt, cmd) in enumerate([("Ping →", self.send_ping), ("Battery? →", self.send_battery_req),
-                                          ("SDK Mode →", self.send_sdk_mode), ("Version? →", self.send_version_req)]):
-            ctk.CTkButton(pf, text=txt, width=120, command=cmd).grid(row=0, column=i, padx=5)
+        self.btn_ping     = ctk.CTkButton(pf, text=self.t("veh_ping"),        width=130, command=self.send_ping)
+        self.btn_batt_req = ctk.CTkButton(pf, text=self.t("veh_battery_req"), width=130, command=self.send_battery_req)
+        self.btn_sdk      = ctk.CTkButton(pf, text=self.t("veh_sdk_mode"),    width=130, command=self.send_sdk_mode)
+        self.btn_ver_req  = ctk.CTkButton(pf, text=self.t("veh_version_req"), width=130, command=self.send_version_req)
+        for i, btn in enumerate([self.btn_ping, self.btn_batt_req, self.btn_sdk, self.btn_ver_req]):
+            btn.grid(row=0, column=i, padx=5)
 
     # ------------------------------------------------------------------ SNIFFER
     def _build_sniffer_tab(self):
-        tab = self.tabview.tab(self.t("tab_sniffer"))
+        tab = self.tabview.tab(self.current_tab_names["tab_sniffer"])
         ctrl = ctk.CTkFrame(tab, fg_color="transparent")
         ctrl.pack(fill="x", padx=10, pady=5)
         self.btn_clear_sniffer = ctk.CTkButton(ctrl, text=self.t("btn_clear"), width=100,
@@ -921,18 +1161,18 @@ class OverCarHUD(ctk.CTk):
         self.sw_auto_scroll.pack(side="left", padx=20)
         self.txt_sniffer = ctk.CTkTextbox(tab, font=ctk.CTkFont(family="Consolas", size=11))
         self.txt_sniffer.pack(fill="both", expand=True, padx=10, pady=5)
-        self.txt_sniffer.insert("end", f"{'[Time]':14} {'Dir':10} {'Message':25} {'Info':<50} Bytes\n")
+        self.txt_sniffer.insert("end", f"{self.t('sniff_time'):14} {self.t('sniff_dir'):10} {self.t('sniff_msg'):25} {self.t('sniff_info'):<50} {self.t('sniff_bytes')}\n")
         self.txt_sniffer.insert("end", "─"*130 + "\n")
 
     # ------------------------------------------------------------------ EXPERT
     def _build_expert_tab(self):
-        tab = self.tabview.tab(self.t("tab_expert"))
+        tab = self.tabview.tab(self.current_tab_names["tab_expert"])
         self.txt_log = ctk.CTkTextbox(tab, font=ctk.CTkFont(family="Consolas", size=12))
         self.txt_log.pack(fill="both", expand=True, padx=10, pady=10)
 
     # ------------------------------------------------------------------ ABOUT
     def _build_about_tab(self):
-        tab = self.tabview.tab(self.t("tab_about"))
+        tab = self.tabview.tab(self.current_tab_names["tab_about"])
         tab.grid_columnconfigure(0, weight=1)
         tab.grid_rowconfigure(0, weight=1)
 
@@ -947,54 +1187,38 @@ class OverCarHUD(ctk.CTk):
         ctk.CTkLabel(hero, text="OverCar Prime",
                      font=ctk.CTkFont(family="Courier", size=32, weight="bold"),
                      text_color="#00BFFF").pack(pady=(20,4))
-        ctk.CTkLabel(hero, text="v2.0  ·  BLE Man-in-the-Middle Debug Tool",
+        ctk.CTkLabel(hero, text=self.t("about_version"),
                      font=ctk.CTkFont(size=13), text_color="#555").pack(pady=(0,8))
 
-        ctk.CTkLabel(hero,
-            text="A fan-made Man-in-the-Middle BLE debug tool for Anki Overdrive,\n"
-                 "built with two ESP32 modules, and a Python HUD.",
+        ctk.CTkLabel(hero, text=self.t("about_desc"),
             font=ctk.CTkFont(size=13), text_color="#aaa", justify="center").pack(pady=(0,16))
 
         # Feature bullets
         feats = ctk.CTkFrame(hero, corner_radius=8, fg_color="#111122")
         feats.pack(fill="x", padx=24, pady=(0,16))
-        for line in [
-            "🔵  Intercepts BLE traffic between the Overdrive app and vehicles",
-            "📡  Decodes and displays packets in real time (Sniffer)",
-            "⚙️   Allows vehicle ID and firmware changing for research purposes",
-            "📊  Live speed, battery and offset graphs",
-            "🏁  Lap timer with auto-detection of start/finish line",
-        ]:
-            ctk.CTkLabel(feats, text=line, anchor="w",
+        for key in ["about_feat1","about_feat2","about_feat3","about_feat4","about_feat5"]:
+            ctk.CTkLabel(feats, text=self.t(key), anchor="w",
                          font=ctk.CTkFont(size=12), text_color="#ccc").pack(
                 fill="x", padx=20, pady=3)
 
-        ctk.CTkLabel(hero,
-            text="Thanks to MasterAirscrach — his Protocol.cs is the best 🙏",
+        ctk.CTkLabel(hero, text=self.t("about_thanks"),
             font=ctk.CTkFont(size=13, weight="bold"), text_color="#FFD700").pack(pady=(0,20))
 
         # Disclaimer card
         disc = ctk.CTkFrame(outer, corner_radius=12, fg_color="#1a0d0d")
         disc.pack(fill="x", padx=30, pady=(0,10))
-        ctk.CTkLabel(disc, text="⚠  Disclaimer",
+        ctk.CTkLabel(disc, text=self.t("about_disclaimer_title"),
                      font=ctk.CTkFont(size=14, weight="bold"), text_color="#FF6666").pack(pady=(16,6))
-        ctk.CTkLabel(disc,
-            text="OverCar Prime is an independent fan project and is not affiliated with,\n"
-                 "endorsed by, or connected to Anki, Inc. or Digital Dream Labs.\n"
-                 "All trademarks remain property of their respective owners.\n"
-                 "This tool is provided as-is for educational and research purposes only.\n"
-                 "Use at your own risk.",
+        ctk.CTkLabel(disc, text=self.t("about_disclaimer"),
             font=ctk.CTkFont(size=12), text_color="#cc9999", justify="center").pack(pady=(0,20))
 
         # Tech stack card
         tech = ctk.CTkFrame(outer, corner_radius=12, fg_color="#0d0d1a")
         tech.pack(fill="x", padx=30, pady=(0,20))
-        ctk.CTkLabel(tech, text="Tech Stack",
+        ctk.CTkLabel(tech, text=self.t("about_tech_title"),
                      font=ctk.CTkFont(size=13, weight="bold"), text_color="#888").pack(pady=(14,6))
-        for item in ["Python 3  ·  customtkinter  ·  pyserial",
-                     "ESP32 (×2)  ·  Arduino BLE libraries",
-                     "Protocol: MasterAirscrachDev"]:
-            ctk.CTkLabel(tech, text=item, font=ctk.CTkFont(size=11), text_color="#666").pack(pady=2)
+        for key in ["about_tech1", "about_tech2", "about_tech3"]:
+            ctk.CTkLabel(tech, text=self.t(key), font=ctk.CTkFont(size=11), text_color="#666").pack(pady=2)
         ctk.CTkLabel(tech, text=" ", font=ctk.CTkFont(size=6)).pack()
 
     # ------------------------------------------------------------------
@@ -1122,17 +1346,17 @@ class OverCarHUD(ctk.CTk):
 
         elif kind == "status":
             flags = []
-            if d["onTrack"]:           flags.append("On Track")
-            if d["onCharger"]:         flags.append("Charging 🔌")
-            if d["hasLowBattery"]:     flags.append("Low Batt! 🔴")
-            if d["hasChargedBattery"]: flags.append("Charged ✅")
-            text  = " | ".join(flags) if flags else "Idle"
+            if d["onTrack"]:           flags.append(self.t("batt_charging").replace(" 🔌","") + self.t("status_track"))
+            if d["onCharger"]:         flags.append(self.t("batt_charging"))
+            if d["hasLowBattery"]:     flags.append(self.t("status_low_batt"))
+            if d["hasChargedBattery"]: flags.append(self.t("status_charged"))
+            text  = " | ".join(flags) if flags else self.t("batt_idle")
             color = "#FF4444" if d["hasLowBattery"] else ("#00FF99" if d["onTrack"] else "#AAAAAA")
             self.card_status.configure(text=text, text_color=color)
-            self.batt_status_card.configure(text="Charging 🔌" if d["onCharger"] else
-                                             ("Discharging" if d["onTrack"] else "Idle"))
+            self.batt_status_card.configure(text=self.t("batt_charging") if d["onCharger"] else
+                                             (self.t("batt_discharging") if d["onTrack"] else self.t("batt_idle")))
             if d["onCharger"] and not self._on_charger:
-                self.batt_graph.add_marker("Charge", color="#FFD700")
+                self.batt_graph.add_marker(self.t("batt_charging").replace(" 🔌",""), color="#FFD700")
             self._on_charger = d["onCharger"]
 
         elif kind == "delocalized":
@@ -1140,7 +1364,7 @@ class OverCarHUD(ctk.CTk):
         elif kind == "recovery_start":
             self.card_status.configure(text=self.t("card_recovery"), text_color="#FFA500")
         elif kind == "recovery_ok":
-            self.card_status.configure(text="✅ Recovered", text_color="#00FF99")
+            self.card_status.configure(text=self.t("status_recovered"), text_color="#00FF99")
         elif kind == "collision":
             self.card_status.configure(text=self.t("card_collision"), text_color="#FF4444")
 
@@ -1218,7 +1442,7 @@ class OverCarHUD(ctk.CTk):
                                     mac=p2[0]; mid=int(p2[1],16)
                                     fw=f"{p2[2]}.{p2[3]}" if len(p2)>3 else "?.?"
                                     self.discovered_cars[mac]={"name":CAR_MODELS.get(mid,f"0x{mid:02X}"),
-                                                                "fw":fw,"model_id":mid}
+                                                        "fw":fw,"model_id":mid}
                                     v=[f"{info['name']} | {m}" for m,info in self.discovered_cars.items()]
                                     self.after(0, lambda val=v: self.car_dropdown.configure(values=val))
                                     if mid==0x12: self.after(0, lambda m2=mid: self.auto_set_vehicle(m2))
