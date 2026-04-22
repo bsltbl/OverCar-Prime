@@ -27,7 +27,7 @@ import tkinter as tk
 from tkinter import Canvas
 
 # =============================================================================
-# PROTOCOL CONSTANTS  (nach MasterAirscratch Protocol.cs)
+# PROTOCOL CONSTANTS  (nach MasterAirscrach Protocol.cs)
 # =============================================================================
 
 MSG = {
@@ -970,7 +970,7 @@ class OverCarHUD(ctk.CTk):
                 fill="x", padx=20, pady=3)
 
         ctk.CTkLabel(hero,
-            text="Thanks to MasterAirscratch — his Protocol.cs is the best 🙏",
+            text="Thanks to MasterAirscrach — his Protocol.cs is the best 🙏",
             font=ctk.CTkFont(size=13, weight="bold"), text_color="#FFD700").pack(pady=(0,20))
 
         # Disclaimer card
@@ -993,7 +993,7 @@ class OverCarHUD(ctk.CTk):
                      font=ctk.CTkFont(size=13, weight="bold"), text_color="#888").pack(pady=(14,6))
         for item in ["Python 3  ·  customtkinter  ·  pyserial",
                      "ESP32 (×2)  ·  Arduino BLE libraries",
-                     "Protocol: MasterAirscratchDev"]:
+                     "Protocol: MasterAirscrachDev"]:
             ctk.CTkLabel(tech, text=item, font=ctk.CTkFont(size=11), text_color="#666").pack(pady=2)
         ctk.CTkLabel(tech, text=" ", font=ctk.CTkFont(size=6)).pack()
 
